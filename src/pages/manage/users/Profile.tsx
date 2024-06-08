@@ -143,7 +143,7 @@ const Profile = () => {
                 "@lg": "row",
               }}
             >
-{/* 未登录状态的后台显示 */}
+              {/* 未登录状态的后台显示 */}
               <AlertIcon mr="$2_5" />
               {/* <AlertTitle mr="$2_5">{t("users.guest-tips")}</AlertTitle> */}
               <Text>{t("Unauthenticated")}</Text>
