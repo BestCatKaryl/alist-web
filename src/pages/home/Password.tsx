@@ -45,6 +45,7 @@ const Password = () => {
           direction={{ "@initial": "column", "@sm": "row" }}
           columnGap="$1"
         >
+{/* 取消登录按钮 */}
           {/* <Text>{t("global.have_account")}</Text> */}
           {/* <Text
             color="$info9"
