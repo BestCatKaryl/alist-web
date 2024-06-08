@@ -143,13 +143,15 @@ const Profile = () => {
                 "@lg": "row",
               }}
             >
+{/* 未登录状态的后台显示 */}
               <AlertIcon mr="$2_5" />
-              <AlertTitle mr="$2_5">{t("users.guest-tips")}</AlertTitle>
-              <AlertDescription>{t("users.modify_nothing")}</AlertDescription>
+              {/* <AlertTitle mr="$2_5">{t("users.guest-tips")}</AlertTitle> */}
+              <Text>{t("Unauthenticated")}</Text>
+              {/* <AlertDescription>{t("users.modify_nothing")}</AlertDescription> */}
             </Alert>
             <HStack spacing="$2">
-              <Text>{t("global.have_account")}</Text>
-              <Text
+              {/* <Text>{t("global.have_account")}</Text> */}
+              {/* <Text
                 color="$info9"
                 as={LinkWithBase}
                 href={`/@login?redirect=${encodeURIComponent(
@@ -157,7 +159,7 @@ const Profile = () => {
                 )}`}
               >
                 {t("global.go_login")}
-              </Text>
+              </Text> */}
             </HStack>
           </>
         }
@@ -302,7 +304,8 @@ const Profile = () => {
           {t("users.add_webauthn")}
         </Button>
       </Show>
-      <HStack wrap="wrap" gap="$2" mt="$2">
+      {/* 隐藏权限内容 */}
+      {/* <<HStack wrap="wrap" gap="$2" mt="$2">
         <For each={UserPermissions}>
           {(item, i) => (
             <PermissionBadge can={UserMethods.can(me(), i())}>
@@ -310,7 +313,7 @@ const Profile = () => {
             </PermissionBadge>
           )}
         </For>
-      </HStack>
+      </HStack> */}
     </VStack>
   )
 }
